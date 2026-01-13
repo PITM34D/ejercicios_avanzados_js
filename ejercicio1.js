@@ -28,3 +28,15 @@ const movies = [
     categories: ["comedia", "aventura", "animación"],
   },
 ];
+
+const categorias = []
+
+for (const movie  of movies) {
+  for (const categoria of movie.categories) {
+    if (!categorias.includes(categoria)){
+      categorias.push(categoria)
+    }
+  } 
+}
+
+console.log(categorias)
